@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.taskContainer {
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.newTaskBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 0.5rem;
+
+  margin-top: calc(0px - 1.6875rem);
+  line-height: 1.6;
+}
+
+.newTaskBar input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-300);
+
+  transition: box-shadow 0.3s;
+}
+
+.newTaskBar input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-500);
+}
+
+.newTaskBar button[type="submit"] {
+  padding: 1rem;
+  border-radius: 8px;
+
+  border: 0;
+  background: var(--blue-500);
+  color: var(--gray-100);
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+  font-size: 0.875rem;
+
+  transition: background-color 0.2s;
+}
+
+.newTaskBar button[type="submit"]:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.newTaskBar button[type="submit"]:not(:disabled):hover {
+  background: var(--blue-300);
+}
+
+.taskCount {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.taskCount div span {
+  border: 0;
+  border-radius: 999px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.125rem 0.65rem;
+}
+
+.taskCreated {
+  color: var(--blue-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.taskFinished {
+  color: var(--purple-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tasks {
+  width: 100%;
+
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.tasks > div {
+  margin: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+.empty {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .taskContainer {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .taskContainer {
+    width: 46rem;
+  }
+}
