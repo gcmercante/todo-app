@@ -1,21 +1,29 @@
 ![logoTodo](src/assets/todo-logo.svg)
 
-Essa app foi feita como parte dos desafios propostos no curso Ignite React da Rocketseat.
+This app was made as part of the challenges proposed in the Rocketseat's Ignite React course.
 
-## Primeiros passos
-Para executar a app, primeiro instale as dependências do projeto utilizando o yarn ou o npm.
+## First steps
+
+First of all install all dependencies using yarn or npm, so you can run the app.
+
 ```bash
 yarn
 
+// or
+
 npm i
 ```
-Para executar a aplicação em modo desenvolvedor utilize o yarn ou o npm com os seguintes comandos.
+
+To run the app in dev mode.
+
 ```bash
 yarn dev
+
+// or
 
 npm run dev
 ```
 
-Pronto! A aplicação todo já está pronta para ser utilizada.
+That's it! todo app is ready to go.
 
-Obs.: Como o objetivo do desafio era apenas apresentar fundamentos do React, não existe um backend para a aplicação, então as task são resetadas sempre que a página é atualizada.
+PS: This app doesn't have a backend! So if you refresh your browser all task will reset.
