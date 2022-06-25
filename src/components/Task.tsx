@@ -1,9 +1,22 @@
 import { Trash } from "phosphor-react";
-import { useEffect, useState } from "react";
 
 import styles from "./Task.module.css";
 
-export function Task({ id, content, onChecked, onDeleteTask, done }: any) {
+interface TaskProps {
+  id: string;
+  content: string;
+  onChecked(checked: boolean, id: string): void;
+  onDeleteTask(id: string): void;
+  done: boolean;
+}
+
+export function Task({
+  id,
+  content,
+  onChecked,
+  onDeleteTask,
+  done,
+}: TaskProps) {
   function handleDelete() {
     onDeleteTask(id);
   }
